@@ -58,12 +58,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons =  [
             [
-                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/sl_bot_zone"),
-                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/slbotzone"),
+                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/CozmoSupport_Official"),
+                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/CozmoUpdates"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/szbots/8"),
-                InlineKeyboardButton("SOURCE CODE📦", url="https://github.com/youtubeslgeekshow/Video-call-bot"),
+                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/ShizuSupport_Official/43"),
+                InlineKeyboardButton("༒ADD TO GROUP༒", url="t.me/TheCozmoBot?startgroup=true"),
             ],
             [
                 InlineKeyboardButton("🔙 BACK HOME", callback_data="home"),
@@ -89,10 +89,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/szbots/8"),
-                InlineKeyboardButton("SOURCE CODE📦", url="https://github.com/youtubeslgeekshow/Video-call-bot"),
+                InlineKeyboardButton("༒ADD TO GROUP༒", url="t.me/TheCozmoBot?startgroup=true"),
             ],
             [
-                InlineKeyboardButton("CLOSE MENU❌", callback_data="close"),
+                InlineKeyboardButton("MORE HELP⁉️️", url="t.me/TheCozmoBot?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -112,19 +112,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
 
-@Client.on_message(filters.command(["start", f"start@{USERNAME}"]) & (filters.chat(CHAT_ID) | filters.private))
+@Client.on_message(filters.command(["vstart", f"start@{USERNAME}"]) & (filters.chat(CHAT_ID) | filters.private))
 async def start(client, message):
     buttons = [
             [
                 InlineKeyboardButton("HOW TO USE ME ❓", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/sl_bot_zone"),
-                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/slbotzone"),
+                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/CozmoSupport_Official"),
+                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/CozmoUpdates"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/szbots/8"),
-                InlineKeyboardButton("SOURCE CODE📦", url="https://github.com/youtubeslgeekshow/Video-call-bot"),
+                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/ShizuSupport_Official/43"),
+                InlineKeyboardButton("༒ADD TO GROUP༒", url="t.me/TheCozmoBot?startgroup=true"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU❌", callback_data="close"),
@@ -133,17 +133,17 @@ async def start(client, message):
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(text=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
 
-@Client.on_message(filters.command(["help", f"help@{USERNAME}"]) & (filters.chat(CHAT_ID) | filters.private))
+@Client.on_message(filters.command(["vhelp", f"help@{USERNAME}"]) & (filters.chat(CHAT_ID) | filters.private))
 async def help(client, message):
     buttons = [
 
             [
-                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/sl_bot_zone"),
-                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/slbotzone"),
+                InlineKeyboardButton("UPDATE CHANNEL 📢", url="https://t.me/CozmoSupport_Official"),
+                InlineKeyboardButton("SUPPORT GROUP 💬", url="https://t.me/CozmoUpdates"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/szbots/8"),
-                InlineKeyboardButton("SOURCE CODE📦", url="https://github.com/youtubeslgeekshow/Video-call-bot"),
+                InlineKeyboardButton("MORE BOTS🤖", url="https://t.me/ShizuSupport_Official"),
+                InlineKeyboardButton("༒ADD TO GROUP༒", url="t.me/TheCozmoBot?startgroup=true"),
             ],
             [
                 InlineKeyboardButton("🔙 BACK HOME", callback_data="home"),
