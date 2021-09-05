@@ -24,7 +24,7 @@ from pyrogram.errors import MessageNotModified
 
 CHAT_ID = Config.CHAT_ID
 USERNAME = Config.BOT_USERNAME
-HOME_TEXT = "👋🏻 **Hello,[{}](tg://user?id={})**,\n\nI am a telegram **video streaming Bot**. \nI Can Stream Videos On Telegram Video  Chat. Made With ❤️ By @supunmabot 😉!"
+HOME_TEXT = "👋🏻 **Hello,[{}](tg://user?id={})**,\n\nI am a telegram **video streaming Bot**. \nI Can Stream Videos On Telegram Video  Chat. Made With ❤️ By @CozmoUpdates 😉!"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 
@@ -49,7 +49,7 @@ HELP_TEXT = """
 \u2022 `/endstream` - end stream and left vc
 
 © **Powered By** : 
-**@sl_bot_zone | @szrosebot**
+**@CozmoUpdates | @TheCozmoBot **
 """
 
 
