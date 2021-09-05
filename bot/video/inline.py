@@ -27,11 +27,11 @@ REPLY_MESSAGE = Config.REPLY_MESSAGE
 
 buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/sl_bot_zone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/slbotzone"),
+                InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/CozmoSupport_Official"),
+                InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/CozmoUpdates"),
             ],
             [
-                InlineKeyboardButton("Socure code", url="https://github.com/youtubeslgeekshow/Video-call-bot"),
+                InlineKeyboardButton("༒ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ༒", url="https://t.me/TheCozmoBot?startgroup=true"),
             ]
          ]
 
@@ -42,7 +42,7 @@ async def search(client, query):
         answers.append(
             InlineQueryResultArticle(
                 title="Deploy Own Video Player Bot",
-                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@sl_bot_zone | @szrosebot </b>", disable_web_page_preview=True),
+                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@CozmoUpdates | @TheCozmoBot </b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
