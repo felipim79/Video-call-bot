@@ -4,5 +4,5 @@ youtube_dl
 ffmpeg-python
 python-dotenv
 youtube_search
-tgcalls
+pytgcalls
 git+https://github.com/pyrogram/pyrogram@master
